@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+author: "부엉이"
+date: "2016년 9월 8일"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+data("airquality")
+lm(Ozone ~ Wind, data=airquality)
+```
+
